@@ -1,13 +1,115 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #030303;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Poppins;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* -------login--------- */
+.login-page,
+.dashboard-page {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* margin-bottom:; */
+}
+
+.custom_input {
+  text-align: left;
+}
+#inputfiled,
+#signin-btn {
+  width: 90%;
+  padding: 0.5rem;
+  padding-block: 0.8rem;
+  background-color: #030303;
+  color: white;
+  border: 1px solid #f0c3f1;
+  border-radius: 10px;
+  outline: none;
+}
+#signin-btn,
+.save-btn {
+  padding: 0.9rem;
+  width: 92%;
+  border: none;
+  background-color: #6741d9;
+}
+#signin-btn:hover,
+.save-btn:hover {
+  cursor: pointer;
+  border: 1px solid #f0c3f1;
+}
+#password_foeld {
+  position: relative;
+}
+.material-symbols-outlined {
+  position: absolute;
+  right: 8%;
+  top: 10px;
+}
+#registration {
+  text-align: center;
+}
+/* ----------dashboard--------- */
+
+.custom-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.custom-section > div:first-child {
+  width: 50%;
+}
+.custom-section > div:last-child {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.custom-section > div:last-child input[type="number"] {
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.3rem;
+  outline: none;
+  border: 1px solid #f0c3f1;
+  background-color: #030303;
+  color: white;
+}
+.regular_field > input {
+  width: 10%;
+}
+.regular_field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.radio-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.graph-section > button {
+  width: 100%;
+  border-radius: 10px;
+  margin-block: 2rem;
+  font-size: 16px;
+  color: white;
+}
+.graph-section {
+  position: relative;
+  padding-block: 2rem;
+}
+.INR_currency {
+  position: absolute;
+  left: -30px;
+  top: 25px;
 }
